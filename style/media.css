@@ -1,0 +1,102 @@
+@media (max-width: 1140px){
+    .collection__catalog{
+        grid-template-columns: 40%;
+        justify-content: center;
+    }
+    .collection__item::after{
+        background-size: 95% 90%;
+    }
+}
+@media (max-width: 992px){
+    .films__item__bg-{
+        object-fit: fill;
+    }
+    .films__item{
+        justify-content: center;
+    }
+    .collection__catalog{
+        grid-template-columns: 60%;
+        grid-auto-rows: 300px;
+    }
+    .series__collection{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 768px){
+    .header__nav .container{
+        flex-direction: column;
+    }
+    .header__nav-link span{
+        padding: 20px 6px;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px;
+    }
+    .films__catalog{
+        grid-template-columns: repeat(2 1fr);
+        grid-auto-rows: minmax(400px, max-content);
+    }
+    .collection__catalog{
+        grid-template-columns: 80%;
+    }
+    .footer .container{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media (max-width: 576px){
+    .intro{
+        min-height: 600px;
+    }
+    .intro__title{
+        font-size: 40px;
+    }
+    .films__catalog{
+        grid-template-columns: 80%;
+        grid-template-rows: minmax(480px, max-content);
+        justify-content: center;
+    }
+    .widow{
+        padding: 40px 0;
+    }
+    .collection__catalog{
+        grid-template-columns: 1fr;
+    }
+    .series__collection{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 440px){
+    .films__catalog{
+        grid-template-columns: 1fr;
+    }
+    .widow__text{
+        margin: 20px 0;
+        line-height: 23px;
+    }
+    .collection__catalog{
+        grid-auto-rows: 230px;
+    }
+    .series__poster{
+        padding: 110px;
+    }
+    .series__poster-title{
+        font-size: 35px;
+        text-align: center;
+    }
+    .series__item{
+        grid-column: 1/3;
+    }
+    .series__poster-text{
+        font-size: 15px;
+    }
+    .intro__title{
+        font-size: 35px;
+        text-align: center;
+        line-height: 50px;
+    }
+}
